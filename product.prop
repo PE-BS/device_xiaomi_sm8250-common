@@ -11,5 +11,9 @@ ro.control_privapp_permissions=log
 # Dex2oat
 dalvik.vm.dex2oat64.enabled=true
 
+# Enable blurs, hidden under dev option
+ro.surface_flinger.supports_background_blur=1
+persist.sys.sf.disable_blurs=1
+
 # Graphics
 vendor.display.disable_rotator_downscale=1
