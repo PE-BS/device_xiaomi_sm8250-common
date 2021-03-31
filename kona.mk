@@ -362,6 +362,10 @@ PRODUCT_PACKAGES += \
     init.qcom.sh \
     init.qti.dcvs.sh
 
+# Remove unwanted packages
+PRODUCT_PACKAGES += \
+    RemovePackages
+
 PRODUCT_PACKAGES += \
     init.nfc.rc \
     init.qcom.power.rc \
