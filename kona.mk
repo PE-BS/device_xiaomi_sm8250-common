@@ -115,6 +115,10 @@ PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-impl \
     android.hardware.ir@1.0-service
     
+# DeviceSettings
+PRODUCT_PACKAGES += \
+    XiaomiParts
+
 #Display
 $(call inherit-product, $(LOCAL_PATH)/kona/display/display.mk)
     
