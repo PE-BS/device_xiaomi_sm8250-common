@@ -149,6 +149,10 @@ vendor/lib64/libbluetooth_audio_session_qti.so|e72cd5a59ce005ef85be903c930f49821
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so|7866d835abc782c39b7d177629264de1bfe52e75
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so|bcf0a726718b037b894df4850a66d696aa99d8fa
 
+# Bluetooth (A2DP) - Stock
+vendor/lib/liba2dpoffload.so
+vendor/lib64/liba2dpoffload.so
+
 # Bluetooth (aptX) - from LA.UM.9.12.r1-09000-SMxx50.0
 system_ext/lib64/libaptX_encoder.so|9e87fed4eac0e9fe428eaf8d0db7a1af89d521e1
 system_ext/lib64/libaptXHD_encoder.so|043c055498f6e6e2b0564ad35ea17b012844cbce

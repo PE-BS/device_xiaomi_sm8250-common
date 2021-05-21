@@ -65,7 +65,6 @@ PRODUCT_PACKAGES += \
     libqahw \
     android.hardware.bluetooth.audio@2.0-impl \
     audio.bluetooth.default \
-    liba2dpoffload \
     libaudiopreprocessing \
     libbatterylistener \
     libbundlewrapper \
