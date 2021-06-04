@@ -85,7 +85,8 @@ $(call inherit-product, $(LOCAL_PATH)/kona/audio/audio.mk)
 #Bluetooth
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.bluetooth_audio@2.0.vendor \
-    vendor.qti.hardware.btconfigstore@1.0.vendor
+    vendor.qti.hardware.btconfigstore@1.0.vendor \
+    vendor.qti.hardware.btconfigstore@2.0.vendor
      
 # Camera
 PRODUCT_PACKAGES += \
