@@ -3,7 +3,6 @@ vendor/bin/adsprpcd
 vendor/bin/dspservice
 vendor/etc/init/vendor.qti.adsprpc-service.rc
 vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc
-vendor/etc/init/vendor.qti.adsprpc-service.rc
 vendor/lib/vendor.qti.hardware.dsp@1.0.so
 vendor/lib64/libadsp_default_listener.so
 vendor/lib64/vendor.qti.hardware.dsp@1.0.so
@@ -68,11 +67,6 @@ vendor/lib/vndk/libxlog.so
 vendor/lib/libaudio_log_utils.so
 vendor/lib/libaudioroute_ext.so
 vendor/lib/vendor.qti.hardware.audiohalext@1.0.so
-vendor/lib64/hw/vendor.qti.hardware.audiohalext@1.0-impl.so
-vendor/lib64/hw/audio.primary.kona.so
-vendor/lib64/libaudio_log_utils.so
-vendor/lib64/libaudioroute_ext.so
-vendor/lib64/vendor.qti.hardware.audiohalext@1.0.so
 
 # Audio libraries
 vendor/bin/audioflacapp
@@ -99,7 +93,6 @@ vendor/lib64/libacdbrtac.so
 vendor/lib/libcapiv2svarnn.so
 vendor/lib64/libadiertac.so
 vendor/lib64/libaudcal.so
-vendor/lib64/libaudio_log_utils.so
 vendor/lib64/libaudioalsa.so
 vendor/lib64/libaudioconfigstore.so
 vendor/lib64/libaudioparsers.so
@@ -115,16 +108,10 @@ vendor/lib/soundfx/libqcbassboost.so|e7244e2344e03de6fbf5d8d5e30f33b78ec6b3ec
 vendor/lib/soundfx/libqcreverb.so|13b019b34f5bb6aa0dea4a91b77c171f77c2ec19
 vendor/lib/soundfx/libqcvirt.so|ccbd1e16b76bc61860d1f73055bd3dcd27b4be11
 vendor/lib/soundfx/libshoebox.so|f22fca7ce99d0d12eaee8484b820f8c3c50651c2
-vendor/lib64/soundfx/libasphere.so|b79c2696daeb0d5c7b4254618a13d46fdaf214ab
-vendor/lib64/soundfx/libqcbassboost.so|b28d6314aca18764ec2c1af90c07696167d7f3aa
-vendor/lib64/soundfx/libqcreverb.so|b42e2cd16b0c58864331aa87b73b009908a0161e
-vendor/lib64/soundfx/libqcvirt.so|db5e9bf50f98c7af149e6bcdff7c8d67e77c129e
-vendor/lib64/soundfx/libshoebox.so|61539cf609eb0935db1367444cb762a589973f5b
 
 # Bluetooth - from LA.UM.9.12.r1-09000-SMxx50.0
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|c9f68e01e279f3fe760563092cfb3344ac340d41
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc|f4ee3b2da2b08647447869ade86ec63f7340accc
-vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so|2f0ca5919f457dc259ed9ed4a07057b7ca25ce59
 vendor/lib64/libbtnv.so|80c30ec03960b592154938ef664f8d42d0e40c1c
 vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so|9ad5c7afb97d93893646083297c8cc3167681220
 vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so|2f0ca5919f457dc259ed9ed4a07057b7ca25ce59
@@ -265,6 +252,8 @@ vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so|79b9149801
 vendor/lib/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so|ea4240eac0f87b062925222f0963fa0f1a02cadf
 
 # Consumer IR
+vendor/etc/permissions/android.hardware.consumerir.xml
+vendor/lib/hw/consumerir.default.so
 vendor/lib64/hw/consumerir.default.so
 
 # Display (HDR) - from LA.UM.9.12.r1-09000-SMxx50.0
@@ -362,8 +351,6 @@ vendor/lib64/libssd.so
 vendor/lib64/libStDrvInt.so
 vendor/lib64/libtzdrmgenprov.so
 vendor/lib64/vendor.qti.hardware.qseecom@1.0.so
-vendor/lib/mediadrm/libwvdrmengine.so
-vendor/lib64/mediadrm/libwvdrmengine.so
 
 # ESE
 vendor/bin/hw/vendor.qti.esepowermanager@1.1-service
@@ -573,12 +560,6 @@ vendor/lib64/vendor.qti.hardware.iop@1.0.so|6d48c957799ac212d68516b44f2dedb6882b
 vendor/lib64/vendor.qti.hardware.iop@2.0.so|45aea5386c7a788ea78b91e9065098e4b7d4d698
 
 
-#IR
-vendor/etc/permissions/android.hardware.consumerir.xml
-vendor/lib/hw/consumerir.default.so
-vendor/lib64/hw/consumerir.default.so
-
-
 # IRQ balance - from LA.UM.9.12.r1-09000-SMxx50.0
 vendor/bin/msm_irqbalance|c455f306eb91fa3870bddb6ef31833aec60c4f01
 vendor/etc/msm_irqbalance.conf|39d0d339b3551e44258360abdb6e55e047983485
@@ -597,7 +578,6 @@ vendor/lib/libspcom.so
 vendor/lib64/libkeymasterdeviceutils.so
 vendor/lib64/libkeymasterprovision.so
 vendor/lib64/libkeymasterutils.so
-vendor/lib64/libqcbor.so
 vendor/lib64/libqtikeymaster4.so
 vendor/lib64/libspcom.so
 
@@ -781,7 +761,6 @@ vendor/lib64/vendor.qti.memory.pasrmanager@1.0.so
 vendor/bin/pm-proxy|6fcc31e4220fb8343fd880d0db0c8acf672bbf4e
 vendor/bin/pm-service|233111a0c4f74bb4f702567ed59569c8469a8775
 vendor/lib64/libperipheral_client.so|b175f01a44410bd623d46db29b759955bf1f2c15
-vendor/lib64/libspcom.so|d7a8f62c6148b3eaac68d9eace0bd46c4eecda55
 
 # Perf - from LA.UM.9.12.r1-09000-SMxx50.0
 vendor/bin/hw/vendor.qti.hardware.iop@2.0-service|f659e9d9e45c2ac38337d7e2afc772e9fd3a01bb
@@ -994,7 +973,6 @@ vendor/radio/qcril_database/upgrade/7_version_update_ecc_table.sql
 #Rootdir
 vendor/bin/mishow.sh
 vendor/bin/qca6234-service.sh
-vendor/bin/init.qti.qcv.sh
 vendor/bin/init.qti.dcvs.sh
 vendor/bin/init.qti.chg_policy.sh
 vendor/bin/init.qcom.sh
@@ -1123,6 +1101,7 @@ vendor/lib64/vendor.qti.hardware.vpp@1.3.so|05eed6bc21e883b3ab2b5050c827c2f6f5c1
 vendor/bin/hw/android.hardware.drm@1.3-service.widevine
 vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc
 -vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml
+vendor/lib/mediadrm/libwvdrmengine.so
 vendor/lib64/mediadrm/libwvdrmengine.so
 vendor/lib64/liboemcrypto.so
 vendor/lib64/libtrustedapploader.so
