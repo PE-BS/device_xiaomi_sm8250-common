@@ -30,7 +30,6 @@ allow hal_camera_default vendor_ctl_netmgrd_prop: file {open getattr map};
 allow hal_camera_default vendor_ctl_qcrild_prop: file {open getattr map};
 allow hal_camera_default vendor_dcvs_prop: file {open getattr map};
 allow hal_camera_default vendor_disable_spu_prop: file {open getattr map};
-allow hal_camera_default vendor_displayfeature_prop: file {open getattr map};
 allow hal_camera_default vendor_face3d_producer_prop: file {open getattr map};
 allow hal_camera_default vendor_ipacm-diag_prop: file {open getattr map};
 allow hal_camera_default vendor_mdm_helper_prop: file {open getattr map};

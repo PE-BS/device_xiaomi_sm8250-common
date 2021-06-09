@@ -267,35 +267,13 @@ vendor/lib/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so|ea4240eac0f8
 # Consumer IR
 vendor/lib64/hw/consumerir.default.so
 
-# Display
-vendor/bin/displayfeature
-vendor/bin/displaycount
-vendor/bin/xiaomi_extend_cmd
-vendor/bin/hw/vendor.xiaomi.hardware.displayfeature@1.0-service
-vendor/etc/init/vendor.xiaomi.hardware.displayfeature@1.0-service.rc
-vendor/lib64/hw/vendor.xiaomi.hardware.displayfeature@1.0-impl.so
-vendor/lib64/vendor.xiaomi.hardware.displayfeature@1.0.so
-vendor/lib64/libdisplayfeature.so
-vendor/lib64/libdisplayfeatureservice.so
-lib/vendor.xiaomi.hardware.displayfeature@1.0.so
-lib64/vendor.xiaomi.hardware.displayfeature@1.0.so
-vendor/lib64/libclient2slpi.notifier.so
-vendor/lib/libclient2slpi.notifier.so
-vendor/lib/vendor.qti.hardware.qdutils_disp@1.0.so
-vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so
-
 # Display (HDR) - from LA.UM.9.12.r1-09000-SMxx50.0
 vendor/lib64/libhdr_tm.so|6bd08fd365bcbe5dc6388b3a99d108255ffa7e96
-
-# Display (HWC) - from LA.UM.9.12.r1-09000-SMxx50.0
-vendor/lib64/libsdmcore.so|0fe14eece4f1d6692e1dfe4ed8ac4f5d48749203
-vendor/lib64/libsdmutils.so|a98ba5e97ebd3ce2160fee02b42f524c33f2b7c6
 
 # Display (SDM) - from LA.UM.9.12.r1-09000-SMxx50.0
 vendor/lib64/libdisplayqos.so|bcebd965c29e5cfbc64593b1dec1d64c3babf8ea
 vendor/lib64/libdisplayskuutils.so|70e7e4f4d13de8b7207b463eaf6c2405f9aacf3f
 vendor/lib64/libqseed3.so|34145a41496a3ade5ea2a3a4718998387e32e4e0
-vendor/lib64/libsdedrm.so|15ef7422cc4f848c2f996531e6425e5d8dc4d9f9
 vendor/lib64/libsdm-color.so|39bc2efef151052d6a8262c8428eb783e5272ec4
 vendor/lib64/libsdm-colormgr-algo.so|0a8cab76f8ff3cbd9d5e99e9303cea2c6e720719
 vendor/lib64/libsdm-diag.so|4552dd1f3c37a50bdbc94dd8c8ba8cd4c61f7cf7
