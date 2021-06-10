@@ -120,10 +120,6 @@ $(call inherit-product, $(LOCAL_PATH)/kona/display/display.mk)
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.3-service.clearkey
-
-#EqualizerFX
-#PRODUCT_PACKAGES += \
-    EqualizerFX
     
 # Exclude sensor from InputManager
 PRODUCT_COPY_FILES += \
