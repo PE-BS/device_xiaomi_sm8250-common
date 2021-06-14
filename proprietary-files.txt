@@ -422,6 +422,15 @@ vendor/lib64/libllvm-qcom.so|1129980e8cbd90fd771da52911aa9f6d332dddcb
 vendor/lib64/libOpenCL.so|2d43eaa7c9fa0a9de128344690957aa5d8e318bc
 vendor/lib64/libVkLayer_q3dtools.so|284d74992c3a37228cea3e82b826ac69d399ada9
 
+# Graphics (Adreno firmware)
+vendor/firmware/a650_gmu.bin
+vendor/firmware/a650_sqe.fw
+vendor/firmware/a650_zap.b00
+vendor/firmware/a650_zap.b01
+vendor/firmware/a650_zap.b02
+vendor/firmware/a650_zap.elf
+vendor/firmware/a650_zap.mdt
+
 # Graphics (Vulkan) - from LA.UM.9.12.r1-09000-SMxx50.0
 vendor/lib/hw/vulkan.adreno.so|a712ce1a123448c8af7ed8605499e56665c6be4d
 vendor/lib64/hw/vulkan.adreno.so|845a7b7531e7a3b7c40f049bb9413eb4337e0310
