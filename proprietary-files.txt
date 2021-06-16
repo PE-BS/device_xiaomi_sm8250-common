@@ -670,6 +670,9 @@ vendor/lib/libsn100u_fw.so
 vendor/lib64/nfc_nci.nqx.default.hw.so
 vendor/lib64/se_nq_extn_client.so
 
+# NVRAM
+vendor/bin/nv_mac
+
 # OMX - from LA.UM.9.12.r1-11500-SMxx50.0
 vendor/lib/libAlacSwDec.so|1d074a0415ee358cd13c981e35266cff4c6863ce
 vendor/lib/libApeSwDec.so|ce425ef9372ed6635e313422b3578f77b90ff526
