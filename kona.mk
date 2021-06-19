@@ -123,7 +123,7 @@ PRODUCT_PACKAGES += \
     
 # Exclude sensor from InputManager
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/excluded-input-devices.xml:system/etc/excluded-input-devices.xml \
+    $(LOCAL_PATH)/vibrator/excluded-input-devices.xml:system/etc/excluded-input-devices.xml \
 
 # fastbootd
 PRODUCT_PACKAGES += \
