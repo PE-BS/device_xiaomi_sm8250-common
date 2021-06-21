@@ -328,6 +328,7 @@ PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,$(LOCAL_PATH)/recovery/ram
 # Rootdir
 PRODUCT_PACKAGES += \
     init.class_main.sh \
+    init.mi.btmac.sh \
     init.crda.sh \
     init.qcom.early_boot.sh \
     init.qcom.post_boot.sh \
