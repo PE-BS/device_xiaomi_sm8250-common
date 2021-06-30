@@ -106,7 +106,8 @@ PRODUCT_COPY_FILES += hardware/qcom-caf/sm8250/display/config/qdcm_calib_data_be
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.demo.hdmirotationlock=false \
     persist.sys.sf.color_saturation=1.0 \
-    persist.sys.sf.color_mode=0 \
+    persist.sys.sf.color_mode=9 \
+    persist.sys.sf.native_mode=2 \
     debug.sf.hw=0 \
     debug.egl.hw=0 \
     debug.sf.latch_unsignaled=1 \
@@ -122,6 +123,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.display.use_smooth_motion=1\
     vendor.display.comp_mask=2 \
     vendor.display.enable_async_powermode=0 \
+    vendor.display.qdcm.disable_factory_mode=1 \
     vendor.display.qdcm.mode_combine=1
 
 PRODUCT_PROPERTY_OVERRIDES += \
