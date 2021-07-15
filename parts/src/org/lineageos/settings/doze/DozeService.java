@@ -26,7 +26,6 @@ import android.os.IBinder;
 import android.util.Log;
 
 import org.lineageos.settings.sensors.PickupSensor;
-import org.lineageos.settings.sensors.ProximitySensor;
 
 public class DozeService extends Service {
     private static final String TAG = "DozeService";
@@ -79,18 +78,12 @@ public class DozeService extends Service {
         if (DozeUtils.isPickUpEnabled(this)) {
             mPickupSensor.disable();
         }
-        if (DozeUtils.isHandwaveGestureEnabled(this) ||
-                DozeUtils.isPocketGestureEnabled(this)) {
-        }
     }
 
     private void onDisplayOff() {
         if (DEBUG) Log.d(TAG, "Display off");
         if (DozeUtils.isPickUpEnabled(this)) {
             mPickupSensor.enable();
-        }
-        if (DozeUtils.isHandwaveGestureEnabled(this) ||
-                DozeUtils.isPocketGestureEnabled(this)) {
         }
     }
 }
