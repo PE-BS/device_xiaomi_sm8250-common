@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.lineageos.settings.d.doze;
+package org.lineageos.settings.sensors;
 
 import android.app.AlarmManager;
 import android.app.KeyguardManager;
@@ -56,7 +56,7 @@ public class PocketSensor implements SensorEventListener {
         mSensorManager = (SensorManager) mContext.getSystemService(Context.SENSOR_SERVICE);
         mProximitySensor = mSensorManager.getDefaultSensor(Sensor.TYPE_PROXIMITY);
         mLightSensor = mSensorManager.getDefaultSensor(Sensor.TYPE_LIGHT);
-        mPickUpSensor = DozeUtils.getSensor(mSensorManager, "xiaomi.sensor.pickup");
+        mPickUpSensor = SensorsUtils.getSensor(mSensorManager, "xiaomi.sensor.pickup");
         
         DISTANCE_MAX_VALUE=mProximitySensor.getMaximumRange();
     }
@@ -102,7 +102,7 @@ public class PocketSensor implements SensorEventListener {
     
     }
 
-    protected void enable() {
+    public void enable() {
         mPocketProtection=true;
         if (DEBUG) Log.d(TAG, "Enabling");
         mSensorManager.registerListener(this, mProximitySensor,
@@ -111,7 +111,7 @@ public class PocketSensor implements SensorEventListener {
                     SensorManager.SENSOR_DELAY_NORMAL);
     }
 
-    protected void disable() {
+    public void disable() {
             if (DEBUG) Log.d(TAG, "Disabling");
             mPickedUp=false;
            //save alarm after turn off screen
@@ -125,7 +125,7 @@ public class PocketSensor implements SensorEventListener {
                     SensorManager.SENSOR_DELAY_NORMAL);
     }
     
-    protected void disable_On() {
+    public void disable_On() {
             if (DEBUG) Log.d(TAG, "Disabling on");
             mPickedUp=true;
             lle=-1;
