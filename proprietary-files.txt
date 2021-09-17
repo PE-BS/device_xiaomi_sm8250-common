@@ -1,12 +1,11 @@
-# ADSP
-vendor/bin/adsprpcd
-vendor/bin/dspservice
-vendor/etc/init/vendor.qti.adsprpc-service.rc
-vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc
-vendor/lib/vendor.qti.hardware.dsp@1.0.so
-vendor/lib64/libadsp_default_listener.so
-vendor/lib64/vendor.qti.hardware.dsp@1.0.so
-vendor/lib64/libcdsprpc_system.so
+# ADSP - from LA.UM.9.12.r1-11500-SMxx50.0
+vendor/bin/adsprpcd|19b3a0078617570d48572a5cbf10831bc979993b
+vendor/bin/dspservice|0844f92183c309e9fda5a6a3a2a1e3025dcf6535
+vendor/etc/init/vendor.qti.adsprpc-service.rc|54588df8e7da58c66838028d2284986b966c2d37
+vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc|fbf2bb38ca6bdddf98c7123da9e1f263a4eec55f
+vendor/lib/vendor.qti.hardware.dsp@1.0.so|ac988eee93406a75d622fca86f097d80ff10eef6
+vendor/lib64/libadsp_default_listener.so|055857c7a010fde818c87370403248dabe7d1391
+vendor/lib64/vendor.qti.hardware.dsp@1.0.so|34a1983ab1a33cab7e88d874c3588f85fbdf0ecf
 
 # ADSP modules
 vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDADV_Encoder.so
@@ -156,22 +155,22 @@ vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc
 vendor/etc/configstore/vpp.configstore.xml
 vendor/etc/configstore/wigig.xml
 
-# CDSP
-vendor/bin/cdsprpcd
-vendor/etc/init/vendor.qti.cdsprpc-service.rc
-vendor/lib/libcdsp_default_listener.so
-vendor/lib/libcdsprpc.so
-vendor/lib/libfastcrc.so
-vendor/lib/libmdsprpc.so
-vendor/lib/libsdsprpc.so
-vendor/lib/libsysmon_cdsp_skel.so
-vendor/lib64/libcdfw.so
-vendor/lib64/libcdfw_remote_api.so
-vendor/lib64/libcdsp_default_listener.so
-vendor/lib64/libcdsprpc.so
-vendor/lib64/libmdsprpc.so
-vendor/lib64/libsdsprpc.so
-vendor/lib64/libsysmon_cdsp_skel.so
+# CDSP - from LA.UM.9.12.r1-11500-SMxx50.0
+vendor/bin/cdsprpcd|c48bc0a10a334c8c1332d77299e83e9d99e9f0b1
+vendor/etc/init/vendor.qti.cdsprpc-service.rc|36772b70216796e8ef19376d9c6a81ee9ffff549
+vendor/lib/libcdsp_default_listener.so|5e90f604ac99493cfc08a89a2b58f5cf7bfb9683
+vendor/lib/libcdsprpc.so|a316d0c79f59dcea703d4f064ef11cd10a2b2f7d
+vendor/lib/libfastcrc.so|9677b12c558025527f5675ff40179715a3125c8c
+vendor/lib/libmdsprpc.so|0d14efaa9e9a4dcb8fb950c88de8867556a2baac
+vendor/lib/libsdsprpc.so|86ff5061543ed2025696451dbb8b0ecf40ef69a5
+vendor/lib/libsysmon_cdsp_skel.so|b0dd56ca83493e68dc7610d44045849bb3bd8c38
+vendor/lib64/libcdfw.so|543b8282f4b6719113f04e14dd908137521e2bb5
+vendor/lib64/libcdfw_remote_api.so|558636f4fa4c17f29cb644c8c6e07766b7240005
+vendor/lib64/libcdsp_default_listener.so|e2d8987e8101dbb58b54e9abf524dfbdac7d605b
+vendor/lib64/libcdsprpc.so|93071278f93eb3096aeb53bcb3d6677c8e279de5
+vendor/lib64/libmdsprpc.so|85c7058a401aa72842f9a01f365fcb0c81a3702b
+vendor/lib64/libsdsprpc.so|ce37ee097367061b087c2e11a4f6fd54fffa5ce7
+vendor/lib64/libsysmon_cdsp_skel.so|3ae87b24980f983ba83fd563134328bb0f6f62e8
 
 # CNE - from LA.UM.9.12.r1-11500-SMxx50.0
 -vendor/app/CneApp/CneApp.apk|76ca5b5ce0b8f1c53896b35cedf740a14bd19c4b
@@ -495,14 +494,14 @@ vendor/lib64/vendor.qti.gnss@4.0.so
 vendor/lib64/hw/android.hardware.gnss@2.1-impl-qti.so
 
 
-# GNSS configs
-vendor/etc/apdr.conf
-vendor/etc/flp.conf
-vendor/etc/gps.conf
-vendor/etc/izat.conf
-vendor/etc/lowi.conf
-vendor/etc/sap.conf
-vendor/etc/xtwifi.conf
+# GNSS configs - from LA.UM.9.12.r1-11500-SMxx50.0
+vendor/etc/apdr.conf|b43b3d32d442436945c36fddcf2259021d98c324
+vendor/etc/flp.conf|8c8642685c225fa0b715c284481018a527dae451
+vendor/etc/gps.conf|b2434dcbd5e7983a516100d67b0cb5521559f8d2
+vendor/etc/izat.conf|0bef4cb996ac26d724f7378a6f1299cfae7c8f7f
+vendor/etc/lowi.conf|2045e83483849a124e5fef052b59190f1b784df0
+vendor/etc/sap.conf|e8268e4ff101a6181a1384c0f4045eb422a54f43
+vendor/etc/xtwifi.conf|ac2189707c0016c31846ccec73e8857d7f566605
 
 # HotwordEnrollment
 -product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk
@@ -580,25 +579,25 @@ vendor/lib64/vendor.qti.hardware.iop@2.0.so|46137df8ff9251ec1c83c642ac5e74f8b589
 vendor/bin/msm_irqbalance|2ac477da6216b8bf616db5a205dac4059b6d73a4
 vendor/etc/msm_irqbalance.conf|39d0d339b3551e44258360abdb6e55e047983485
 
-# Keymaster
-vendor/bin/hw/android.hardware.keymaster@4.0-service-qti
-vendor/bin/hw/android.hardware.keymaster@4.1-service-qti
-vendor/bin/hw/android.hardware.keymaster@4.0-strongbox-service-qti
-vendor/etc/init/android.hardware.keymaster@4.0-service-qti.rc
-vendor/lib/libkeymasterdeviceutils.so
-vendor/lib/libkeymasterprovision.so
-vendor/lib/libkeymasterutils.so
-vendor/lib/libqcbor.so
-vendor/lib/libqtikeymaster4.so
-vendor/lib/libspcom.so
-vendor/lib64/libkeymasterdeviceutils.so
-vendor/lib64/libkeymasterprovision.so
-vendor/lib64/libkeymasterutils.so
-vendor/lib64/libqtikeymaster4.so
-vendor/lib64/libspcom.so
+# Keymaster - from LA.UM.9.12.r1-11500-SMxx50.0
+vendor/bin/hw/android.hardware.keymaster@4.0-service-qti|7dd0eff233910274f5ab95b3cda67bc063e0fbec
+vendor/bin/hw/android.hardware.keymaster@4.1-service-qti|d339c17369a16b59093303ca714eab897ffdac60
+vendor/bin/hw/android.hardware.keymaster@4.0-strongbox-service-qti|f42cf6af585a50fca7559047e581ed9cd5132955
+vendor/etc/init/android.hardware.keymaster@4.1-service-qti.rc|f6907552961ba772c1ad5b493913a60d65abedb4
+vendor/lib/libkeymasterdeviceutils.so|8acf9279b506ec35d0a8a2afc5028fb56bda2f40
+vendor/lib/libkeymasterprovision.so|dbdf52a44d157bd0d1a329b54581155848c7e0c8
+vendor/lib/libkeymasterutils.so|f871268768e1b77cf8b95f347412a60e582564ec
+vendor/lib/libqcbor.so|e6907a4f9da62793c7e821fc5388c76c48f8774f
+vendor/lib/libqtikeymaster4.so|557513c44c3189151c2058ef98b468b16891bc99
+vendor/lib/libspcom.so|a5e86cf21a49efdfc25d08e54035f293f1f4c715
+vendor/lib64/libkeymasterdeviceutils.so|519e1f501c2d625fcabf3125efc8b1fa89fd6013
+vendor/lib64/libkeymasterprovision.so|2605bfa33737ed68a7cfc1f13d3d38740c2045f4
+vendor/lib64/libkeymasterutils.so|bbda5a3868c21261bee179056ef8650332d10857
+vendor/lib64/libqtikeymaster4.so|3091036aa1094b655fff9953ae1a4869ea36e216
+vendor/lib64/libspcom.so|14f69e1c6ad4a6bbb5ea0b7e38e027ef1e7fc12a
 
-# Keystore
-vendor/lib64/vendor.qti.hardware.wifi.keystore@1.0.so
+# Keystore - from LA.UM.9.12.r1-11500-SMxx50.0
+vendor/lib64/vendor.qti.hardware.wifi.keystore@1.0.so|a4afce8236cb9a29f6788dbef312996c18e019ce
 
 # Listen - from LA.UM.9.12.r1-11500-SMxx50.0
 vendor/lib/hw/sound_trigger.primary.kona.so|107536fff4670365b5a7a92cbf4175f41b39a850
@@ -790,13 +789,13 @@ vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so
 vendor/lib64/vendor.qti.hardware.qccvndhal@1.0-halimpl.so
 vendor/lib64/vendor.qti.hardware.qccvndhal@1.0.so
 
-# QCV
-vendor/bin/init.qti.qcv.sh
-vendor/etc/init/init.qti.qcv.rc
-vendor/lib/libsoc_helper.so
-vendor/lib/libsoc_helper_jni.so
-vendor/lib64/libsoc_helper.so
-vendor/lib64/libsoc_helper_jni.so
+# QCV - from LA.UM.9.12.r1-11500-SMxx50.0
+vendor/bin/init.qti.qcv.sh|0c0d80f0db99cec9259163c4d65a9c22ea5f69bf
+vendor/etc/init/init.qti.qcv.rc|c0c97f5674e24307440da1e166dc405ac1694d55
+vendor/lib/libsoc_helper.so|92bcfc1b203c80e81fa56c2bd9307306c3f44585
+vendor/lib/libsoc_helper_jni.so|ad63837cec502a1601f87dda2228b4f8588c6688
+vendor/lib64/libsoc_helper.so|dc70ca5e029ae5e126974d530d15bead3ceb9492
+vendor/lib64/libsoc_helper_jni.so|2713d0fc4d2290587fd477f0fb0e251ace6ef73a
 
 # QMI
 etc/permissions/privapp-permissions-qti.xml
@@ -953,10 +952,10 @@ vendor/bin/init.crda.sh
 #vendor/lib/vendor.qti.hardware.seccam@1.0.so
 #vendor/lib64/vendor.qti.hardware.seccam@1.0.so
 
-# Seccomp
-vendor/etc/seccomp_policy/qspm.policy
-vendor/etc/seccomp_policy/qti-systemd.policy
-vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy
+# Seccomp - from LA.UM.9.12.r1-11500-SMxx50.0
+vendor/etc/seccomp_policy/qspm.policy|943dd12bd4ae7cb0037b2e246143d76bb1787257
+vendor/etc/seccomp_policy/qti-systemd.policy|40bf52fb50a94eb8325beefe1927d9ba155fb02a
+vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy|f060101b26d3674bb173e5fc95e118f56a8ac15d
 
 # Secure element
 vendor/bin/hw/vendor.qti.secure_element@1.2-service
@@ -1034,8 +1033,8 @@ vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti|772dfdebadcfb9af3e625
 vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc|2cfc563d7e1579374f001c94588fae7835a12ffc
 vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so|e6c0bd16fe689f13710c55050d9b395bf227a607
 
-# UBWC
-vendor/lib/libstreamparser.so
+# UBWC - from LA.UM.9.12.r1-11500-SMxx50.0
+vendor/lib/libstreamparser.so|e1b91d6991f6d184c3c99edf192b064c381c3b61
 
 # Voice
 -system_ext/framework/vendor.qti.voiceprint-V1.0-java.jar
